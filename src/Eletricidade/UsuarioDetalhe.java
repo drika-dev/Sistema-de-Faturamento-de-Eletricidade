@@ -5,14 +5,14 @@ import java.awt.event.*;
 import javax.swing.*;
 import java.sql.*;
 
-public class CustomerDetails extends JFrame implements ActionListener{
+public class UsuarioDetalhe extends JFrame implements ActionListener{
  
     JTable t1;
     JButton b1;
     String x[] = {"Customer Name","Meter Number","Address","City","State","Email","Phone"};
     String y[][] = new String[40][8];
     int i=0, j=0;
-    CustomerDetails(){
+    UsuarioDetalhe(){
         super("Customer Details");
         setSize(1200,650);
         setLocation(400,150);
@@ -52,7 +52,7 @@ public class CustomerDetails extends JFrame implements ActionListener{
     }
     
     public static void main(String[] args){
-        new CustomerDetails().setVisible(true);
+        new UsuarioDetalhe().setVisible(true);
     }
     
 }

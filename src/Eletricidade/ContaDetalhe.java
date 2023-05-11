@@ -6,13 +6,13 @@ import javax.swing.*;
 import java.sql.*;
 import net.proteanit.sql.DbUtils;
 
-public class BillDetails extends JFrame{
+public class ContaDetalhe extends JFrame{
  
     JTable t1;
     String x[] = {"Meter Number","Month","Units","Total Bill","Status"};
     String y[][] = new String[40][8];
     int i=0, j=0;
-    BillDetails(String meter){
+    ContaDetalhe(String meter){
         super("Bill Details");
         setSize(700,650);
         setLocation(600,150);
@@ -40,7 +40,7 @@ public class BillDetails extends JFrame{
     }
     
     public static void main(String[] args){
-        new BillDetails("").setVisible(true);
+        new ContaDetalhe("").setVisible(true);
     }
     
 }

@@ -257,7 +257,7 @@ public class Project extends JFrame implements ActionListener{
     public void actionPerformed(ActionEvent ae){
         String msg = ae.getActionCommand();
         if(msg.equals("Customer Details")){
-            new CustomerDetails().setVisible(true);
+            new UsuarioDetalhe().setVisible(true);
             
         }else if(msg.equals("New Customer")){
             new NewCustomer().setVisible(true);
@@ -287,13 +287,13 @@ public class Project extends JFrame implements ActionListener{
             new GenerateBill(meter).setVisible(true);
             
         }else if(msg.equals("Deposit Details")){
-            new DepositDetails().setVisible(true);
+            new DepositoDetalhe().setVisible(true);
         }else if(msg.equals("View Information")){
             new ViewInformation(meter).setVisible(true);
         }else if(msg.equals("Update Information")){
             new UpdateInformation(meter).setVisible(true);
         }else if(msg.equals("Bill Details")){
-            new BillDetails(meter).setVisible(true);
+            new ContaDetalhe(meter).setVisible(true);
         }
         
         

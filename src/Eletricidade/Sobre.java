@@ -10,7 +10,7 @@ import java.awt.Font;
 import javax.swing.JFrame;
 import javax.swing.border.Border;
 
-public class About extends JFrame implements ActionListener {
+public class Sobre extends JFrame implements ActionListener {
 
     JButton b1;
     JLabel l1;
@@ -18,7 +18,7 @@ public class About extends JFrame implements ActionListener {
     TextArea t1;
     String s;
 
-    public About() {
+    public Sobre() {
 
         setLayout(null);
         JButton b1 = new JButton("Exit");
@@ -71,7 +71,7 @@ public class About extends JFrame implements ActionListener {
     }
 
     public static void main(String args[]) {
-        new About().setVisible(true);
+        new Sobre().setVisible(true);
     }
 
 }

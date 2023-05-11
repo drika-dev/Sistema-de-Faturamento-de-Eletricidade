@@ -6,7 +6,7 @@ import javax.swing.*;
 import java.sql.*;
 import net.proteanit.sql.DbUtils;
 
-public class DepositDetails extends JFrame implements ActionListener{
+public class DepositoDetalhe extends JFrame implements ActionListener{
  
     JTable t1;
     JButton b1, b2;
@@ -15,7 +15,7 @@ public class DepositDetails extends JFrame implements ActionListener{
     String x[] = {"Meter Number","Month","Units","Total Bill","Status"};
     String y[][] = new String[40][8];
     int i=0, j=0;
-    DepositDetails(){
+    DepositoDetalhe(){
         super("Deposit Details");
         setSize(700,750);
         setLocation(600,150);
@@ -105,7 +105,7 @@ public class DepositDetails extends JFrame implements ActionListener{
     }
     
     public static void main(String[] args){
-        new DepositDetails().setVisible(true);
+        new DepositoDetalhe().setVisible(true);
     }
     
 }
